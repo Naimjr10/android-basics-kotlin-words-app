@@ -67,7 +67,7 @@ class LetterAdapter :
             // Dapatkan context dari itemView
             val context = holder.itemView.context
             // Buat objek Intent, masukkan context dan tetapkan tujuan misalnya ke DetailActivity
-            val intent = Intent(context, DetailActivity::class.java)
+            val intent = Intent(context, DetailActivity.javaClass.declaringClass)
             intent.putExtra(DetailActivity.LETTERS_KEY, holder.button.text.toString())
             context.startActivity(intent)
         }
