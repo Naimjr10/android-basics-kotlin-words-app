@@ -17,7 +17,6 @@ class WordListFragment : Fragment() {
     private lateinit var letterId: String
 
     companion object {
-        const val LETTER = "letter"
         const val SEARCH_PREFIX = "https://www.google.com/search?q="
     }
 
@@ -29,7 +28,7 @@ class WordListFragment : Fragment() {
         // { LetterListFragmentDirections.actionLetterListFragmentToWordListFragment() }
         // dan tetapkan ke variabel letterId
         arguments?.let {
-            letterId = it.getString(LETTER).toString()
+            letterId = it.getString(LetterListFragment.KEY_LETTER).toString()
         }
 
     }

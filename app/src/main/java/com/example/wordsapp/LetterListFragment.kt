@@ -20,6 +20,10 @@ class LetterListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private var isLinearLayoutManager = true
 
+    companion object {
+        const val KEY_LETTER = "letter"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
