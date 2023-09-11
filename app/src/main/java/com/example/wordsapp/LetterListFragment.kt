@@ -79,6 +79,9 @@ class LetterListFragment : Fragment() {
         ) { value ->
             isLinearLayoutManager = value
             chooseLayout()
+
+            // Redraw the menu
+            activity?.invalidateOptionsMenu()
         }
     }
 
